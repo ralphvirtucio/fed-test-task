@@ -1,0 +1,46 @@
+{
+  "vpns": [
+    {
+      "name": "ExpressVPN",
+      "description": "ExpressVPN, which is currently offering a 30-day free trial, is the ultimate choice for high-speed browsing. With its military-grade encryption, you can rest assured that your internet activity will always remain private.",
+      "special_description": "Over 7000 people checked out ExpressVPN in the last month",
+      "money_back": 30,
+      "num_servers": 3000,
+      "num_countries": 105,
+      "is_kill_switch": true,
+      "devices_license": 8,
+      "mobiles": ["IOS", "Android"],
+      "link": "https://expressvpn.com",
+      "logo_name": "./assets/expressvpn-logo-red.svg",
+      "logo": "./assets/expresvpn-only-logo.png"
+    },
+    {
+      "name": "CyberGhost",
+      "description": "Thanks to a brilliant interface and lots of handy features, this VPN will make even the pickiest users happy. For desktop or mobile, Windows, Mac, or Linux, if you want to securely enjoy private browsing, CyberGhost is consistently impressive.",
+      "special_description": "",
+      "money_back": 45,
+      "num_servers": 11690,
+      "num_countries": 100,
+      "is_kill_switch": true,
+      "devices_license": 7,
+      "mobiles": ["IOS", "Android"],
+      "link": "https://www.cyberghostvpn.com",
+      "logo_name": "./assets/logo-cyberghost.svg",
+      "logo": "./assets/cyberghost-only-logo.png"
+    },
+    {
+      "name": "CyberGhost",
+      "description": "NordVPN offers decent value for money. Get a fast, secure, and affordable VPN with good global coverage.",
+      "special_description": "",
+      "money_back": 30,
+      "num_servers": 6293,
+      "num_countries": 1111,
+      "is_kill_switch": true,
+      "devices_license": 10,
+      "mobiles": ["IOS", "Android"],
+      "link": "https://nordvpn.com",
+      "logo_name": "./assets/nordvpn-default-svg.svg",
+      "logo": "./assets/nordvpn-only-logo-icon.svg"
+    }
+  ]
+}
