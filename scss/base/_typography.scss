@@ -13,6 +13,10 @@
   text-align: center;
   color: $neutral-clr-1;
   font-weight: 500;
+
+  @include respond-to('small') {
+    display: none;
+  }
 }
 
 

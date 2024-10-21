@@ -133,6 +133,11 @@ select {
   color: hsl(200, 18%, 26%);
   font-weight: 500;
 }
+@media (min-width: 48em) {
+  .card-title--mobile {
+    display: none;
+  }
+}
 
 .mobile__content h3 {
   font-size: var(--step-0);
@@ -161,9 +166,19 @@ select {
 .mobile-nav__list-item img {
   width: 3rem;
 }
+@media (min-width: 48em) {
+  .mobile-nav {
+    display: none;
+  }
+}
 
 .card__info {
   display: none;
+}
+@media (min-width: 48em) {
+  .card__info {
+    display: block;
+  }
 }
 
 .card__features {
@@ -172,6 +187,11 @@ select {
 
 .card__cta--desktop {
   display: none;
+}
+@media (min-width: 48em) {
+  .card__cta--desktop {
+    display: block;
+  }
 }
 
 .feature__list-item {
@@ -229,6 +249,7 @@ select {
   display: flex;
   gap: 1rem;
   margin-block-start: 1rem;
+  margin-block-end: 2rem;
 }
 .mobile__content .mobile__vpn-strengths div {
   display: flex;
@@ -264,13 +285,71 @@ select {
   width: 1rem;
   height: 1rem;
 }
+@media (min-width: 48em) {
+  .mobile__content {
+    display: none;
+  }
+}
+
+.mobile__price-plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-block-end: 1rem;
+}
+.mobile__price-plan h4 {
+  font-size: var(--step-0);
+  text-align: center;
+  color: hsl(200, 18%, 26%);
+  font-weight: 500;
+}
+.mobile__price-plan .price {
+  color: hsl(208, 63%, 41%);
+  font-size: var(--step-3);
+  margin-block: 0.5rem;
+}
+.mobile__price-plan .price__per-month {
+  font-size: var(--step--1);
+  color: hsla(200, 18%, 26%, 0.8);
+}
+@media (min-width: 48em) {
+  .mobile__price-plan {
+    display: none;
+  }
+}
+
+@media (min-width: 48em) {
+  .mobile__cta {
+    display: none;
+  }
+}
+
+.btn__link {
+  text-decoration: none;
+  background-color: hsl(14, 80%, 50%);
+  color: hsl(0, 0%, 98%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 0.75rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.btn__link--w-icon span {
+  line-height: 0;
+}
+.btn__link--w-icon svg {
+  width: 1rem;
+  height: 1rem;
+}
 
 .header {
   text-align: center;
 }
 
 .main {
-  margin-block-start: 1.5rem;
+  margin-block: 1.5rem;
   background-color: hsl(0, 0%, 100%);
   padding-block: var(--space-s);
   padding-inline: var(--space-m);

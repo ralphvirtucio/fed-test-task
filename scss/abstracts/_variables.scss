@@ -45,7 +45,7 @@
   --step-5: clamp(2.7994rem, 2.4462rem + 1.7658vw, 3.8147rem);
 }
 
-$primary-clr-1: hsl(187, 100%, 38%);
+$primary-clr-1: #00abc2;
 $primary-clr-2: hsl(208, 63%, 41%);
 $primary-clr-3: hsl(14, 80%, 50%);
 
@@ -77,3 +77,9 @@ $unactive-tab-clr: $neutral-clr-4;
 
 
 $ff-main: "Inter", serif;
+
+$breakpoints: (
+  'small': (min-width: 48em),
+  'medium': (min-width: 64em),
+  'large': (min-width: 90em),
+)
