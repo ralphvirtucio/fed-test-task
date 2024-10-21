@@ -9,6 +9,9 @@
   margin-block-start: 1.25rem;
 }
 
+.card__cta--desktop {
+  display: none;
+}
 
 .feature__list {
 
@@ -64,4 +67,60 @@
     width: 1rem;
     fill: $white;
   }
+}
+
+
+.mobile__content {
+  margin-block-start: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .mobile__vpn-strengths {
+    display: flex;
+    gap: 1rem;
+    margin-block-start: 1rem;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // gap: 1rem;
+    }
+
+    .vpn__icon--main {
+      border: 3px solid $neutral-clr-1--50;
+      width: 3.5rem;
+      height: 3.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      border-radius: 50%;
+      svg {
+        width: 1rem;
+        height: 1rem;
+      }
+    }
+
+    .vpn__icon-container {
+      border: 3px solid $neutral-clr-1--50;
+      width: 1.2rem;
+      height: 1.2rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: translateY(-12px);
+      background-color: #fff;
+
+      svg {
+        width: 1rem;
+        height: 1rem;
+      }
+    }
+  }
+
+  
 }

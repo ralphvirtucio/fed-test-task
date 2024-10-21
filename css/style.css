@@ -134,6 +134,18 @@ select {
   font-weight: 500;
 }
 
+.mobile__content h3 {
+  font-size: var(--step-0);
+  text-align: center;
+  color: hsl(200, 18%, 26%);
+  font-weight: 500;
+}
+.mobile__content .vpn__strength-label {
+  color: hsl(200, 18%, 26%);
+  transform: translateY(-10px);
+  font-size: var(--step--1);
+}
+
 .mobile-nav__list {
   display: flex;
   justify-content: space-between;
@@ -156,6 +168,10 @@ select {
 
 .card__features {
   margin-block-start: 1.25rem;
+}
+
+.card__cta--desktop {
+  display: none;
 }
 
 .feature__list-item {
@@ -200,6 +216,53 @@ select {
 .feature__label--icon svg {
   width: 1rem;
   fill: hsl(0, 0%, 100%);
+}
+
+.mobile__content {
+  margin-block-start: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mobile__content .mobile__vpn-strengths {
+  display: flex;
+  gap: 1rem;
+  margin-block-start: 1rem;
+}
+.mobile__content .mobile__vpn-strengths div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mobile__content .mobile__vpn-strengths .vpn__icon--main {
+  border: 3px solid hsla(200, 18%, 26%, 0.5);
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 50%;
+}
+.mobile__content .mobile__vpn-strengths .vpn__icon--main svg {
+  width: 1rem;
+  height: 1rem;
+}
+.mobile__content .mobile__vpn-strengths .vpn__icon-container {
+  border: 3px solid hsla(200, 18%, 26%, 0.5);
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-12px);
+  background-color: #fff;
+}
+.mobile__content .mobile__vpn-strengths .vpn__icon-container svg {
+  width: 1rem;
+  height: 1rem;
 }
 
 .header {

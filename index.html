@@ -177,18 +177,17 @@
                 <div class="feature__label">
                   <span class="feature__label--icon">
                     <svg
+                      xmlns="http://www.w3.org/2000/svg"
                       width="800px"
                       height="800px"
-                      viewBox="0 0 24 24"
+                      viewBox="0 0 16 16"
                       fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
                       aria-hidden="true">
                       <path
-                        d="M12 18H12.01M9.2 21H14.8C15.9201 21 16.4802 21 16.908 20.782C17.2843 20.5903 17.5903 20.2843 17.782 19.908C18 19.4802 18 18.9201 18 17.8V6.2C18 5.0799 18 4.51984 17.782 4.09202C17.5903 3.71569 17.2843 3.40973 16.908 3.21799C16.4802 3 15.9201 3 14.8 3H9.2C8.0799 3 7.51984 3 7.09202 3.21799C6.71569 3.40973 6.40973 3.71569 6.21799 4.09202C6 4.51984 6 5.07989 6 6.2V17.8C6 18.9201 6 19.4802 6.21799 19.908C6.40973 20.2843 6.71569 20.5903 7.09202 20.782C7.51984 21 8.07989 21 9.2 21Z"
-                        stroke="#fff"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round" />
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M4 0C2.89543 0 2 0.895431 2 2V14C2 15.1046 2.89543 16 4 16H12C13.1046 16 14 15.1046 14 14V2C14 0.895431 13.1046 0 12 0H4ZM12 3H4V13H12V3Z"
+                        fill="#fff" />
                     </svg>
                   </span>
                   <p>Mobile</p>
@@ -197,7 +196,7 @@
               </li>
             </ul>
 
-            <div class="card__cta">
+            <div class="card__cta--desktop">
               <a
                 href="expressvpn.com"
                 class="btn__link">
@@ -221,30 +220,87 @@
           <div class="mobile__content">
             <h3>Best VPN for</h3>
 
-            <div>
+            <div class="mobile__vpn-strengths">
               <div>
-                <img
-                  src="./assets/lock-solid.svg"
-                  alt="Lock Logo" />
-                <span>
-                  <img
-                    src="./assets/check-solid.svg"
-                    alt="Check Logo" />
+                <span class="vpn__icon--main">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="800px"
+                    height="800px"
+                    viewBox="0 0 24 24"
+                    fill="none">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M5.25 10.0546V8C5.25 4.27208 8.27208 1.25 12 1.25C15.7279 1.25 18.75 4.27208 18.75 8V10.0546C19.8648 10.1379 20.5907 10.348 21.1213 10.8787C22 11.7574 22 13.1716 22 16C22 18.8284 22 20.2426 21.1213 21.1213C20.2426 22 18.8284 22 16 22H8C5.17157 22 3.75736 22 2.87868 21.1213C2 20.2426 2 18.8284 2 16C2 13.1716 2 11.7574 2.87868 10.8787C3.40931 10.348 4.13525 10.1379 5.25 10.0546ZM6.75 8C6.75 5.10051 9.10051 2.75 12 2.75C14.8995 2.75 17.25 5.10051 17.25 8V10.0036C16.867 10 16.4515 10 16 10H8C7.54849 10 7.13301 10 6.75 10.0036V8Z"
+                      fill="#00abc2" />
+                  </svg>
                 </span>
-                <p>Privacy</p>
+                <span class="vpn__icon-container">
+                  <svg
+                    width="800px"
+                    height="800px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true">
+                    <path
+                      d="M4 12.6111L8.92308 17.5L20 6.5"
+                      stroke="#00abc2"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <p class="vpn__strength-label">Privacy</p>
               </div>
-            </div>
 
-            <div>
-              <img
-                src="./assets/gauge-simple-high-solid.svg"
-                alt="High Gauge" />
-              <span>
-                <img
-                  src="./assets/check-solid.svg"
-                  alt="Check Logo" />
-              </span>
-              <p>Speed</p>
+              <div>
+                <span class="vpn__icon--main">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="800px"
+                    height="800px"
+                    viewBox="0 0 512 512"
+                    version="1.1"
+                    aria-hidden="true">
+                    <title>gauge-filled</title>
+                    <g
+                      id="Page-1"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd">
+                      <g
+                        id="icon"
+                        fill="#00abc2"
+                        transform="translate(42.666667, 64.000000)">
+                        <path
+                          d="M213.333333,-1.42108547e-14 C331.15408,-1.42108547e-14 426.666667,95.5125867 426.666667,213.333333 C426.666667,283.121534 393.156154,345.082935 341.348241,384.004426 L85.3184259,384.004426 C33.5105123,345.082935 7.10542736e-15,283.121534 7.10542736e-15,213.333333 C7.10542736e-15,95.5125867 95.5125867,-1.42108547e-14 213.333333,-1.42108547e-14 Z M91.815415,258.858125 L54.8649978,280.191458 L76.1983311,317.141875 L113.148748,295.808542 L91.815415,258.858125 Z M334.851252,258.858125 L313.517918,295.808542 L350.468336,317.141875 L371.801669,280.191458 L334.851252,258.858125 Z M258.858125,91.815415 L213.333333,170.666667 L212.627762,170.672383 C189.389044,171.049163 170.666667,190.004826 170.666667,213.333333 C170.666667,236.897483 189.769184,256 213.333333,256 C236.897483,256 256,236.897483 256,213.333333 C256,205.559217 253.920834,198.270715 250.288235,191.993562 L250.288235,191.993562 L295.808542,113.148748 L258.858125,91.815415 Z M350.468336,109.524791 L313.517918,130.858125 L334.851252,167.808542 L371.801669,146.475209 L350.468336,109.524791 Z M76.1983311,109.524791 L54.8649978,146.475209 L91.815415,167.808542 L113.148748,130.858125 L76.1983311,109.524791 Z M234.666667,42.6666667 L192,42.6666667 L192,85.3333333 L234.666667,85.3333333 L234.666667,42.6666667 Z"
+                          id="Combined-Shape"></path>
+                      </g>
+                    </g>
+                  </svg>
+                </span>
+                <span class="vpn__icon-container">
+                  <svg
+                    width="800px"
+                    height="800px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true">
+                    <path
+                      d="M4 12.6111L8.92308 17.5L20 6.5"
+                      stroke="#00abc2"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <p class="vpn__strength-label">Speed</p>
+              </div>
             </div>
           </div>
 
