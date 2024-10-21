@@ -1,0 +1,9 @@
+@use '../abstracts' as *;
+
+
+.main {
+  margin-block-start: 1.5rem;
+  background-color: $white;
+  padding-block: var(--space-s);
+  padding-inline: var(--space-m);
+}

@@ -1,0 +1,24 @@
+@use '../abstracts' as *;
+
+
+.mobile-nav {
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    background-color: $unactive-tab-clr;
+    &-item {
+
+      &.active {
+        background-color: $white;
+      }
+
+      padding-block: .5rem;
+      padding-inline: 2rem;
+
+      img {
+        width: 3rem
+      }
+    }
+  }
+}

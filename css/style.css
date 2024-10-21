@@ -120,5 +120,112 @@ select {
     scroll-behavior: auto !important;
   }
 }
+.heading__main {
+  color: hsl(200, 18%, 26%);
+  font-size: var(--step-1);
+  padding-block-start: 3rem;
+  padding-block-end: 1.5rem;
+}
+
+.card-title--mobile {
+  font-size: var(--step-0);
+  text-align: center;
+  color: hsl(200, 18%, 26%);
+  font-weight: 500;
+}
+
+.mobile-nav__list {
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(0, 0%, 91%);
+}
+.mobile-nav__list-item {
+  padding-block: 0.5rem;
+  padding-inline: 2rem;
+}
+.mobile-nav__list-item.active {
+  background-color: hsl(0, 0%, 100%);
+}
+.mobile-nav__list-item img {
+  width: 3rem;
+}
+
+.card__info {
+  display: none;
+}
+
+.card__features {
+  margin-block-start: 1.25rem;
+}
+
+.feature__list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.feature__list-item:not(.feature__list-item:last-child) {
+  margin-block-end: 1.25rem;
+}
+.feature__list-item .feature__label {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  flex: 1;
+}
+.feature__list-item .feature__label p {
+  color: hsl(208, 63%, 41%);
+  font-size: var(--step--1);
+  line-height: 1.2;
+  max-width: 8ch;
+}
+.feature__list-item .feature__value {
+  font-size: var(--step--1);
+  color: hsl(200, 18%, 26%);
+}
+
+.feature__label--icon {
+  display: inline-block;
+  background-color: hsl(208, 63%, 41%);
+  padding: 0.5rem;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feature__label--icon svg {
+  width: 1rem;
+  fill: hsl(0, 0%, 100%);
+}
+
+.header {
+  text-align: center;
+}
+
+.main {
+  margin-block-start: 1.5rem;
+  background-color: hsl(0, 0%, 100%);
+  padding-block: var(--space-s);
+  padding-inline: var(--space-m);
+}
+
+.u-container {
+  max-width: var(--grid-max-width);
+  padding-inline: var(--grid-gutter);
+  margin-inline: auto;
+}
+
+.u-grid {
+  display: grid;
+  gap: var(--grid-gutter);
+}
+
+.wrapper {
+  padding-inline: 2rem;
+}
 
 /*# sourceMappingURL=style.css.map */
