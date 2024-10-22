@@ -18,6 +18,8 @@
     <link
       rel="stylesheet"
       href="/css/style.css" />
+
+      <script src="index.js" defer></script>
     <title>Top 3 VPNs</title>
   </head>
 
@@ -28,21 +30,28 @@
         <nav
           class="mobile-nav"
           id="mobile-nav">
-          <ul class="mobile-nav__list">
-            <li class="mobile-nav__list-item active">
-              <img
+          <ul class="mobile-nav__list" role="tablist">
+            <li class="mobile-nav__list-item" role="presentation">
+              <a role="tab" href="#section1" aria-selected="true">
+                <img
                 src="./assets/expresvpn-only-logo.png"
                 alt="ExpressVPN Logo" />
+              </a>
             </li>
-            <li class="mobile-nav__list-item">
-              <img
+            <li class="mobile-nav__list-item" role="presentation">
+              <a role="tab" href="#section2" tabindex="-1">
+                
+                <img
                 src="./assets/cyberghost-only-logo.png"
                 alt="CyberGhost Logo" />
+              </a>
             </li>
-            <li class="mobile-nav__list-item">
-              <img
+            <li class="mobile-nav__list-item" role="presentation">
+              <a role="tab" href="#secton3" tabindex="-1">
+                <img
                 src="./assets/nordvpn-only-logo-icon.svg"
                 alt="NordVPN Logo" />
+              </a>
             </li>
           </ul>
         </nav>
@@ -50,17 +59,20 @@
 
       <main class="main">
         <section
-          id="expressvpn"
-          class="card top-1">
+          id="section1"
+          class="card top-1"
+          role="tabpanel"
+          aria-labelledby="expressvpn"
+          
+          >
           <h2 class="card-title--mobile">ExpressVPN</h2>
-
           <div class="card__info">
             <img
               src="./assets/expressvpn-logo-red.svg"
               alt="ExpressVPN"
               class="logo" />
             <p class="content">
-              ExpressVPN, which is currently offering a 30-day free trial, is the ultimate choice for high-speed
+              ExpressVPN, which is currently offering a <strong>30-day free trial</strong>, is the ultimate choice for high-speed
               browsing. With its military-grade encryption, you can rest assured that your internet activity will always
               remain private.
             </p>
@@ -171,7 +183,7 @@
                   </span>
                   <p>Devices/ license</p>
                 </div>
-                <p class="feature__value">7</p>
+                <p class="feature__value">8</p>
               </li>
               <li class="feature__list-item">
                 <div class="feature__label">
@@ -321,8 +333,560 @@
           </a>
           </div>
         </section>
-        <section></section>
-        <section></section>
+
+
+        <section
+          id="section2"
+          class="card card--hidden"
+          role="tabpanel"
+          aria-labelledby="cyberghost"
+          >
+          <h2 class="card-title--mobile">CyberGhost</h2>
+
+          <div class="card__info">
+            <img
+              src="./assets/logo-cyberghost.svg"
+              alt="CyberGhost"
+              class="logo" />
+            <p class="content">
+              Thanks to a brilliant interface and lots of
+              handy features, this VPN will make even the
+              pickiest users happy. For desktop or mobile,
+              Windows, Mac, or Linux, if you want to
+              securely enjoy private browsing, CyberGhost
+              is consistently impressive
+            </p>
+          </div>
+
+          <div class="card__features">
+            <ul class="feature__list">
+              <li class="feature__list-item">
+                <div class="feature__label">
+                  <span class="feature__label--icon">
+                    <svg
+                      fill="#000000"
+                      width="800px"
+                      height="800px"
+                      viewBox="-5 0 19 19"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="cf-icon-svg"
+                      aria-hidden="true">
+                      <path
+                        d="M8.699 11.907a3.005 3.005 0 0 1-1.503 2.578 4.903 4.903 0 0 1-1.651.663V16.3a1.03 1.03 0 1 1-2.059 0v-1.141l-.063-.011a5.199 5.199 0 0 1-1.064-.325 3.414 3.414 0 0 1-1.311-.962 1.029 1.029 0 1 1 1.556-1.347 1.39 1.39 0 0 0 .52.397l.002.001a3.367 3.367 0 0 0 .648.208h.002a4.964 4.964 0 0 0 .695.084 3.132 3.132 0 0 0 1.605-.445c.5-.325.564-.625.564-.851a1.005 1.005 0 0 0-.245-.65 2.06 2.06 0 0 0-.55-.44 2.705 2.705 0 0 0-.664-.24 3.107 3.107 0 0 0-.65-.066 6.046 6.046 0 0 1-1.008-.08 4.578 4.578 0 0 1-1.287-.415A3.708 3.708 0 0 1 1.02 9.04a3.115 3.115 0 0 1-.718-1.954 2.965 2.965 0 0 1 .321-1.333 3.407 3.407 0 0 1 1.253-1.335 4.872 4.872 0 0 1 1.611-.631V2.674a1.03 1.03 0 1 1 2.059 0v1.144l.063.014h.002a5.464 5.464 0 0 1 1.075.368 3.963 3.963 0 0 1 1.157.795A1.03 1.03 0 0 1 6.39 6.453a1.901 1.901 0 0 0-.549-.376 3.516 3.516 0 0 0-.669-.234l-.066-.014a3.183 3.183 0 0 0-.558-.093 3.062 3.062 0 0 0-1.572.422 1.102 1.102 0 0 0-.615.928 1.086 1.086 0 0 0 .256.654l.002.003a1.679 1.679 0 0 0 .537.43l.002.002a2.57 2.57 0 0 0 .703.225h.002a4.012 4.012 0 0 0 .668.053 5.165 5.165 0 0 1 1.087.112l.003.001a4.804 4.804 0 0 1 1.182.428l.004.002a4.115 4.115 0 0 1 1.138.906l.002.002a3.05 3.05 0 0 1 .753 2.003z" />
+                    </svg>
+                  </span>
+                  <p>Money Back Guarantee</p>
+                </div>
+                <p class="feature__value">45 days</p>
+              </li>
+
+              <li class="feature__list-item">
+                <div class="feature__label">
+                  <span class="feature__label--icon">
+                    <svg
+                      width="800px"
+                      height="800px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M22 18.2105C22 17.8399 21.6876 17.5395 21.3023 17.5395H13.7252C13.5364 17.0909 13.164 16.7327 12.6977 16.5511V13.7368H18.5116C20.0529 13.7368 21.3023 12.5351 21.3023 11.0526C21.3023 9.57018 20.0529 8.36842 18.5116 8.36842C20.0529 8.36842 21.3023 7.16666 21.3023 5.68421C21.3023 4.20176 20.0529 3 18.5116 3H5.48837C3.94711 3 2.69767 4.20176 2.69767 5.68421C2.69767 7.16666 3.94711 8.36842 5.48837 8.36842C3.94711 8.36842 2.69767 9.57018 2.69767 11.0526C2.69767 12.5351 3.94711 13.7368 5.48837 13.7368H11.3023V16.5511C10.836 16.7327 10.4636 17.0909 10.2748 17.5395H2.69767C2.31236 17.5395 2 17.8399 2 18.2105C2 18.5811 2.31236 18.8816 2.69767 18.8816H10.2748C10.5508 19.5374 11.2192 20 12 20C12.7808 20 13.4492 19.5374 13.7252 18.8816H21.3023C21.6876 18.8816 22 18.5811 22 18.2105ZM12.2326 5.68421C12.2326 5.3136 12.5449 5.01316 12.9302 5.01316H18.5116C18.8969 5.01316 19.2093 5.3136 19.2093 5.68421C19.2093 6.05482 18.8969 6.35526 18.5116 6.35526H12.9302C12.5449 6.35526 12.2326 6.05482 12.2326 5.68421ZM12.2326 11.0526C12.2326 10.682 12.5449 10.3816 12.9302 10.3816H18.5116C18.8969 10.3816 19.2093 10.682 19.2093 11.0526C19.2093 11.4232 18.8969 11.7237 18.5116 11.7237H12.9302C12.5449 11.7237 12.2326 11.4232 12.2326 11.0526ZM6.4186 6.57895C6.93236 6.57895 7.34884 6.17836 7.34884 5.68421C7.34884 5.19006 6.93236 4.78947 6.4186 4.78947C5.90485 4.78947 5.48837 5.19006 5.48837 5.68421C5.48837 6.17836 5.90485 6.57895 6.4186 6.57895ZM6.4186 11.9474C6.93236 11.9474 7.34884 11.5468 7.34884 11.0526C7.34884 10.5585 6.93236 10.1579 6.4186 10.1579C5.90485 10.1579 5.48837 10.5585 5.48837 11.0526C5.48837 11.5468 5.90485 11.9474 6.4186 11.9474Z"
+                        fill="#fff" />
+                    </svg>
+                  </span>
+                  <p>Servers/ Countries</p>
+                </div>
+                <p class="feature__value">11690 Servers in 100 countries</p>
+              </li>
+
+              <li class="feature__list-item">
+                <div class="feature__label">
+                  <span class="feature__label--icon">
+                    <svg
+                      width="800px"
+                      height="800px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M9 4C4.58172 4 1 7.58172 1 12C1 16.4183 4.58172 20 9 20H15C19.4183 20 23 16.4183 23 12C23 7.58172 19.4183 4 15 4H9ZM15 16C17.2091 16 19 14.2091 19 12C19 9.79086 17.2091 8 15 8C12.7909 8 11 9.79086 11 12C11 14.2091 12.7909 16 15 16Z"
+                        fill="#fff" />
+                    </svg>
+                  </span>
+                  <p>Kill switch</p>
+                </div>
+                <p class="feature__value">Yes</p>
+              </li>
+
+              <li class="feature__list-item">
+                <div class="feature__label">
+                  <span class="feature__label--icon">
+                    <svg
+                      fill="#000000"
+                      version="1.1"
+                      id="Capa_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="800px"
+                      height="800px"
+                      viewBox="0 0 48.832 48.832"
+                      xml:space="preserve">
+                      <g>
+                        <g id="Layer_20_51_">
+                          <g>
+                            <polygon
+                              points="15.42,32.814 22.23,32.814 22.23,34.385 15.42,34.385 15.42,35.68 36.838,35.68 36.838,34.385 28.898,34.385 
+				28.898,32.814 37.729,32.814 37.729,29.227 15.42,29.227 			" />
+                            <polygon
+                              points="9.489,11.231 41.957,11.231 41.957,24.209 44.739,24.209 44.739,8.449 6.707,8.449 6.707,17.14 9.489,17.14 			
+				" />
+                            <path
+                              d="M0,39.799h14.523V18.013H0V39.799z M7.568,38.705c-0.386,0-0.7-0.312-0.7-0.699c0-0.386,0.314-0.699,0.7-0.699
+				c0.387,0,0.699,0.312,0.699,0.699S7.955,38.705,7.568,38.705z M2.1,20.113h10.325l-0.001,16.072H2.1V20.113z" />
+                            <path
+                              d="M38.715,25.046v15.337h10.117V25.046H38.715z M43.979,25.68c0.121,0,0.22,0.101,0.22,0.221
+				c0,0.121-0.099,0.222-0.22,0.222c-0.123,0-0.223-0.101-0.223-0.222C43.756,25.78,43.855,25.68,43.979,25.68z M42.665,26.416
+				h2.623v0.212h-2.623V26.416z M43.891,39.721c-0.291,0-0.524-0.236-0.524-0.525c0-0.29,0.233-0.524,0.524-0.524
+				c0.289,0,0.525,0.234,0.525,0.524C44.416,39.484,44.18,39.721,43.891,39.721z M47.369,37.915
+				c-2.368,0.013-6.016,0.022-7.189,0.012V27.382l7.189-0.001V37.915z" />
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </span>
+                  <p>Devices / license</p>
+                </div>
+                <p class="feature__value">7</p>
+              </li>
+              <li class="feature__list-item">
+                <div class="feature__label">
+                  <span class="feature__label--icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="800px"
+                      height="800px"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      aria-hidden="true">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M4 0C2.89543 0 2 0.895431 2 2V14C2 15.1046 2.89543 16 4 16H12C13.1046 16 14 15.1046 14 14V2C14 0.895431 13.1046 0 12 0H4ZM12 3H4V13H12V3Z"
+                        fill="#fff" />
+                    </svg>
+                  </span>
+                  <p>Mobile</p>
+                </div>
+                <p class="feature__value">IOS, Android</p>
+              </li>
+            </ul>
+
+            <div class="card__cta--desktop">
+              <a
+              href="https://cyberghost.com"
+              class="btn__link btn__link--w-icon">
+              Visit website
+              <span>
+                <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"  aria-hidden="true"    aria-label="CyberGhost">
+                  <path d="M9 6L15 12L9 18" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+              </span>
+            </a>
+              <a
+                href="https://cyberghost.com"
+                class="card__link"
+                >cyberghost.com</a
+              >
+            </div>
+          </div>
+
+          <div class="mobile__content">
+            <h3>Best VPN for</h3>
+
+            <div class="mobile__vpn-strengths">
+              <div>
+                <span class="vpn__icon--main">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="800px"
+                    height="800px"
+                    viewBox="0 0 24 24"
+                    fill="none">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M5.25 10.0546V8C5.25 4.27208 8.27208 1.25 12 1.25C15.7279 1.25 18.75 4.27208 18.75 8V10.0546C19.8648 10.1379 20.5907 10.348 21.1213 10.8787C22 11.7574 22 13.1716 22 16C22 18.8284 22 20.2426 21.1213 21.1213C20.2426 22 18.8284 22 16 22H8C5.17157 22 3.75736 22 2.87868 21.1213C2 20.2426 2 18.8284 2 16C2 13.1716 2 11.7574 2.87868 10.8787C3.40931 10.348 4.13525 10.1379 5.25 10.0546ZM6.75 8C6.75 5.10051 9.10051 2.75 12 2.75C14.8995 2.75 17.25 5.10051 17.25 8V10.0036C16.867 10 16.4515 10 16 10H8C7.54849 10 7.13301 10 6.75 10.0036V8Z"
+                      fill="#00abc2" />
+                  </svg>
+                </span>
+                <span class="vpn__icon-container">
+                  <svg
+                    width="800px"
+                    height="800px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true">
+                    <path
+                      d="M4 12.6111L8.92308 17.5L20 6.5"
+                      stroke="#00abc2"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <p class="vpn__strength-label">Privacy</p>
+              </div>
+
+              <div>
+                <span class="vpn__icon--main">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="800px"
+                    height="800px"
+                    viewBox="0 0 512 512"
+                    version="1.1"
+                    aria-hidden="true">
+                    <title>gauge-filled</title>
+                    <g
+                      id="Page-1"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd">
+                      <g
+                        id="icon"
+                        fill="#00abc2"
+                        transform="translate(42.666667, 64.000000)">
+                        <path
+                          d="M213.333333,-1.42108547e-14 C331.15408,-1.42108547e-14 426.666667,95.5125867 426.666667,213.333333 C426.666667,283.121534 393.156154,345.082935 341.348241,384.004426 L85.3184259,384.004426 C33.5105123,345.082935 7.10542736e-15,283.121534 7.10542736e-15,213.333333 C7.10542736e-15,95.5125867 95.5125867,-1.42108547e-14 213.333333,-1.42108547e-14 Z M91.815415,258.858125 L54.8649978,280.191458 L76.1983311,317.141875 L113.148748,295.808542 L91.815415,258.858125 Z M334.851252,258.858125 L313.517918,295.808542 L350.468336,317.141875 L371.801669,280.191458 L334.851252,258.858125 Z M258.858125,91.815415 L213.333333,170.666667 L212.627762,170.672383 C189.389044,171.049163 170.666667,190.004826 170.666667,213.333333 C170.666667,236.897483 189.769184,256 213.333333,256 C236.897483,256 256,236.897483 256,213.333333 C256,205.559217 253.920834,198.270715 250.288235,191.993562 L250.288235,191.993562 L295.808542,113.148748 L258.858125,91.815415 Z M350.468336,109.524791 L313.517918,130.858125 L334.851252,167.808542 L371.801669,146.475209 L350.468336,109.524791 Z M76.1983311,109.524791 L54.8649978,146.475209 L91.815415,167.808542 L113.148748,130.858125 L76.1983311,109.524791 Z M234.666667,42.6666667 L192,42.6666667 L192,85.3333333 L234.666667,85.3333333 L234.666667,42.6666667 Z"
+                          id="Combined-Shape"></path>
+                      </g>
+                    </g>
+                  </svg>
+                </span>
+                <span class="vpn__icon-container">
+                  <svg
+                    width="800px"
+                    height="800px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true">
+                    <path
+                      d="M4 12.6111L8.92308 17.5L20 6.5"
+                      stroke="#00abc2"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <p class="vpn__strength-label">Speed</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mobile__price-plan">
+            <h4>Starting Price</h4>
+            <p class="price">$6.67</p>
+            <p  class="price__per-month">per month</p>
+          </div>
+
+          <div class="mobile__cta">
+            <a
+            href="https://cyberghost.com"
+            class="btn__link btn__link--w-icon">
+            Visit website
+            <span>
+              <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"  aria-hidden="true"    aria-label="CyberGhost">
+                <path d="M9 6L15 12L9 18" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </span>
+          </a>
+          </div>
+        </section>
+
+        <section
+          id="section3"
+          class="card card--hidden"
+          role="tabpanel"
+          aria-labelledby="nordvpn"
+          >
+          <h2 class="card-title--mobile">NordVPN</h2>
+
+          <div class="card__info">
+            <img
+              src="./assets/nordvpn-default-svg.svg"
+              alt="NordVPN"
+              class="logo" />
+            <p class="content">
+              NordVPN offers decent value for money.
+              Get a fast, secure, and affordable VPN with
+              good global coverage
+            </p>
+          </div>
+
+          <div class="card__features">
+            <ul class="feature__list">
+              <li class="feature__list-item">
+                <div class="feature__label">
+                  <span class="feature__label--icon">
+                    <svg
+                      fill="#000000"
+                      width="800px"
+                      height="800px"
+                      viewBox="-5 0 19 19"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="cf-icon-svg"
+                      aria-hidden="true">
+                      <path
+                        d="M8.699 11.907a3.005 3.005 0 0 1-1.503 2.578 4.903 4.903 0 0 1-1.651.663V16.3a1.03 1.03 0 1 1-2.059 0v-1.141l-.063-.011a5.199 5.199 0 0 1-1.064-.325 3.414 3.414 0 0 1-1.311-.962 1.029 1.029 0 1 1 1.556-1.347 1.39 1.39 0 0 0 .52.397l.002.001a3.367 3.367 0 0 0 .648.208h.002a4.964 4.964 0 0 0 .695.084 3.132 3.132 0 0 0 1.605-.445c.5-.325.564-.625.564-.851a1.005 1.005 0 0 0-.245-.65 2.06 2.06 0 0 0-.55-.44 2.705 2.705 0 0 0-.664-.24 3.107 3.107 0 0 0-.65-.066 6.046 6.046 0 0 1-1.008-.08 4.578 4.578 0 0 1-1.287-.415A3.708 3.708 0 0 1 1.02 9.04a3.115 3.115 0 0 1-.718-1.954 2.965 2.965 0 0 1 .321-1.333 3.407 3.407 0 0 1 1.253-1.335 4.872 4.872 0 0 1 1.611-.631V2.674a1.03 1.03 0 1 1 2.059 0v1.144l.063.014h.002a5.464 5.464 0 0 1 1.075.368 3.963 3.963 0 0 1 1.157.795A1.03 1.03 0 0 1 6.39 6.453a1.901 1.901 0 0 0-.549-.376 3.516 3.516 0 0 0-.669-.234l-.066-.014a3.183 3.183 0 0 0-.558-.093 3.062 3.062 0 0 0-1.572.422 1.102 1.102 0 0 0-.615.928 1.086 1.086 0 0 0 .256.654l.002.003a1.679 1.679 0 0 0 .537.43l.002.002a2.57 2.57 0 0 0 .703.225h.002a4.012 4.012 0 0 0 .668.053 5.165 5.165 0 0 1 1.087.112l.003.001a4.804 4.804 0 0 1 1.182.428l.004.002a4.115 4.115 0 0 1 1.138.906l.002.002a3.05 3.05 0 0 1 .753 2.003z" />
+                    </svg>
+                  </span>
+                  <p>Money Back Guarantee</p>
+                </div>
+                <p class="feature__value">30 days</p>
+              </li>
+
+              <li class="feature__list-item">
+                <div class="feature__label">
+                  <span class="feature__label--icon">
+                    <svg
+                      width="800px"
+                      height="800px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M22 18.2105C22 17.8399 21.6876 17.5395 21.3023 17.5395H13.7252C13.5364 17.0909 13.164 16.7327 12.6977 16.5511V13.7368H18.5116C20.0529 13.7368 21.3023 12.5351 21.3023 11.0526C21.3023 9.57018 20.0529 8.36842 18.5116 8.36842C20.0529 8.36842 21.3023 7.16666 21.3023 5.68421C21.3023 4.20176 20.0529 3 18.5116 3H5.48837C3.94711 3 2.69767 4.20176 2.69767 5.68421C2.69767 7.16666 3.94711 8.36842 5.48837 8.36842C3.94711 8.36842 2.69767 9.57018 2.69767 11.0526C2.69767 12.5351 3.94711 13.7368 5.48837 13.7368H11.3023V16.5511C10.836 16.7327 10.4636 17.0909 10.2748 17.5395H2.69767C2.31236 17.5395 2 17.8399 2 18.2105C2 18.5811 2.31236 18.8816 2.69767 18.8816H10.2748C10.5508 19.5374 11.2192 20 12 20C12.7808 20 13.4492 19.5374 13.7252 18.8816H21.3023C21.6876 18.8816 22 18.5811 22 18.2105ZM12.2326 5.68421C12.2326 5.3136 12.5449 5.01316 12.9302 5.01316H18.5116C18.8969 5.01316 19.2093 5.3136 19.2093 5.68421C19.2093 6.05482 18.8969 6.35526 18.5116 6.35526H12.9302C12.5449 6.35526 12.2326 6.05482 12.2326 5.68421ZM12.2326 11.0526C12.2326 10.682 12.5449 10.3816 12.9302 10.3816H18.5116C18.8969 10.3816 19.2093 10.682 19.2093 11.0526C19.2093 11.4232 18.8969 11.7237 18.5116 11.7237H12.9302C12.5449 11.7237 12.2326 11.4232 12.2326 11.0526ZM6.4186 6.57895C6.93236 6.57895 7.34884 6.17836 7.34884 5.68421C7.34884 5.19006 6.93236 4.78947 6.4186 4.78947C5.90485 4.78947 5.48837 5.19006 5.48837 5.68421C5.48837 6.17836 5.90485 6.57895 6.4186 6.57895ZM6.4186 11.9474C6.93236 11.9474 7.34884 11.5468 7.34884 11.0526C7.34884 10.5585 6.93236 10.1579 6.4186 10.1579C5.90485 10.1579 5.48837 10.5585 5.48837 11.0526C5.48837 11.5468 5.90485 11.9474 6.4186 11.9474Z"
+                        fill="#fff" />
+                    </svg>
+                  </span>
+                  <p>Servers/ Countries</p>
+                </div>
+                <p class="feature__value">6293 Servers in 111 countries</p>
+              </li>
+
+              <li class="feature__list-item">
+                <div class="feature__label">
+                  <span class="feature__label--icon">
+                    <svg
+                      width="800px"
+                      height="800px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M9 4C4.58172 4 1 7.58172 1 12C1 16.4183 4.58172 20 9 20H15C19.4183 20 23 16.4183 23 12C23 7.58172 19.4183 4 15 4H9ZM15 16C17.2091 16 19 14.2091 19 12C19 9.79086 17.2091 8 15 8C12.7909 8 11 9.79086 11 12C11 14.2091 12.7909 16 15 16Z"
+                        fill="#fff" />
+                    </svg>
+                  </span>
+                  <p>Kill switch</p>
+                </div>
+                <p class="feature__value">Yes</p>
+              </li>
+
+              <li class="feature__list-item">
+                <div class="feature__label">
+                  <span class="feature__label--icon">
+                    <svg
+                      fill="#000000"
+                      version="1.1"
+                      id="Capa_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="800px"
+                      height="800px"
+                      viewBox="0 0 48.832 48.832"
+                      xml:space="preserve">
+                      <g>
+                        <g id="Layer_20_51_">
+                          <g>
+                            <polygon
+                              points="15.42,32.814 22.23,32.814 22.23,34.385 15.42,34.385 15.42,35.68 36.838,35.68 36.838,34.385 28.898,34.385 
+				28.898,32.814 37.729,32.814 37.729,29.227 15.42,29.227 			" />
+                            <polygon
+                              points="9.489,11.231 41.957,11.231 41.957,24.209 44.739,24.209 44.739,8.449 6.707,8.449 6.707,17.14 9.489,17.14 			
+				" />
+                            <path
+                              d="M0,39.799h14.523V18.013H0V39.799z M7.568,38.705c-0.386,0-0.7-0.312-0.7-0.699c0-0.386,0.314-0.699,0.7-0.699
+				c0.387,0,0.699,0.312,0.699,0.699S7.955,38.705,7.568,38.705z M2.1,20.113h10.325l-0.001,16.072H2.1V20.113z" />
+                            <path
+                              d="M38.715,25.046v15.337h10.117V25.046H38.715z M43.979,25.68c0.121,0,0.22,0.101,0.22,0.221
+				c0,0.121-0.099,0.222-0.22,0.222c-0.123,0-0.223-0.101-0.223-0.222C43.756,25.78,43.855,25.68,43.979,25.68z M42.665,26.416
+				h2.623v0.212h-2.623V26.416z M43.891,39.721c-0.291,0-0.524-0.236-0.524-0.525c0-0.29,0.233-0.524,0.524-0.524
+				c0.289,0,0.525,0.234,0.525,0.524C44.416,39.484,44.18,39.721,43.891,39.721z M47.369,37.915
+				c-2.368,0.013-6.016,0.022-7.189,0.012V27.382l7.189-0.001V37.915z" />
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </span>
+                  <p>Devices / license</p>
+                </div>
+                <p class="feature__value">10</p>
+              </li>
+              <li class="feature__list-item">
+                <div class="feature__label">
+                  <span class="feature__label--icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="800px"
+                      height="800px"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      aria-hidden="true">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M4 0C2.89543 0 2 0.895431 2 2V14C2 15.1046 2.89543 16 4 16H12C13.1046 16 14 15.1046 14 14V2C14 0.895431 13.1046 0 12 0H4ZM12 3H4V13H12V3Z"
+                        fill="#fff" />
+                    </svg>
+                  </span>
+                  <p>Mobile</p>
+                </div>
+                <p class="feature__value">IOS, Android</p>
+              </li>
+            </ul>
+
+            <div class="card__cta--desktop">
+              <a
+              href="https://nordvpn.com"
+              class="btn__link btn__link--w-icon">
+              Visit website
+              <span>
+                <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"  aria-hidden="true"    aria-label="NordVPN">
+                  <path d="M9 6L15 12L9 18" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+              </span>
+            </a>
+              <a
+                href="https://nordvpn.com"
+                class="card__link"
+                >nordvpn.com</a
+              >
+            </div>
+          </div>
+
+          <div class="mobile__content">
+            <h3>Best VPN for</h3>
+
+            <div class="mobile__vpn-strengths">
+              <div>
+                <span class="vpn__icon--main">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="800px"
+                    height="800px"
+                    viewBox="0 0 24 24"
+                    fill="none">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M5.25 10.0546V8C5.25 4.27208 8.27208 1.25 12 1.25C15.7279 1.25 18.75 4.27208 18.75 8V10.0546C19.8648 10.1379 20.5907 10.348 21.1213 10.8787C22 11.7574 22 13.1716 22 16C22 18.8284 22 20.2426 21.1213 21.1213C20.2426 22 18.8284 22 16 22H8C5.17157 22 3.75736 22 2.87868 21.1213C2 20.2426 2 18.8284 2 16C2 13.1716 2 11.7574 2.87868 10.8787C3.40931 10.348 4.13525 10.1379 5.25 10.0546ZM6.75 8C6.75 5.10051 9.10051 2.75 12 2.75C14.8995 2.75 17.25 5.10051 17.25 8V10.0036C16.867 10 16.4515 10 16 10H8C7.54849 10 7.13301 10 6.75 10.0036V8Z"
+                      fill="#00abc2" />
+                  </svg>
+                </span>
+                <span class="vpn__icon-container">
+                  <svg
+                    width="800px"
+                    height="800px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true">
+                    <path
+                      d="M4 12.6111L8.92308 17.5L20 6.5"
+                      stroke="#00abc2"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <p class="vpn__strength-label">Privacy</p>
+              </div>
+
+              <div>
+                <span class="vpn__icon--main">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="800px"
+                    height="800px"
+                    viewBox="0 0 512 512"
+                    version="1.1"
+                    aria-hidden="true">
+                    <title>gauge-filled</title>
+                    <g
+                      id="Page-1"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd">
+                      <g
+                        id="icon"
+                        fill="#00abc2"
+                        transform="translate(42.666667, 64.000000)">
+                        <path
+                          d="M213.333333,-1.42108547e-14 C331.15408,-1.42108547e-14 426.666667,95.5125867 426.666667,213.333333 C426.666667,283.121534 393.156154,345.082935 341.348241,384.004426 L85.3184259,384.004426 C33.5105123,345.082935 7.10542736e-15,283.121534 7.10542736e-15,213.333333 C7.10542736e-15,95.5125867 95.5125867,-1.42108547e-14 213.333333,-1.42108547e-14 Z M91.815415,258.858125 L54.8649978,280.191458 L76.1983311,317.141875 L113.148748,295.808542 L91.815415,258.858125 Z M334.851252,258.858125 L313.517918,295.808542 L350.468336,317.141875 L371.801669,280.191458 L334.851252,258.858125 Z M258.858125,91.815415 L213.333333,170.666667 L212.627762,170.672383 C189.389044,171.049163 170.666667,190.004826 170.666667,213.333333 C170.666667,236.897483 189.769184,256 213.333333,256 C236.897483,256 256,236.897483 256,213.333333 C256,205.559217 253.920834,198.270715 250.288235,191.993562 L250.288235,191.993562 L295.808542,113.148748 L258.858125,91.815415 Z M350.468336,109.524791 L313.517918,130.858125 L334.851252,167.808542 L371.801669,146.475209 L350.468336,109.524791 Z M76.1983311,109.524791 L54.8649978,146.475209 L91.815415,167.808542 L113.148748,130.858125 L76.1983311,109.524791 Z M234.666667,42.6666667 L192,42.6666667 L192,85.3333333 L234.666667,85.3333333 L234.666667,42.6666667 Z"
+                          id="Combined-Shape"></path>
+                      </g>
+                    </g>
+                  </svg>
+                </span>
+                <span class="vpn__icon-container">
+                  <svg
+                    width="800px"
+                    height="800px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true">
+                    <path
+                      d="M4 12.6111L8.92308 17.5L20 6.5"
+                      stroke="#00abc2"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <p class="vpn__strength-label">Speed</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mobile__price-plan">
+            <h4>Starting Price</h4>
+            <p class="price">$6.67</p>
+            <p  class="price__per-month">per month</p>
+          </div>
+
+          <div class="mobile__cta">
+            <a
+            href="https://nordvpn.com"
+            class="btn__link btn__link--w-icon">
+            Visit website
+            <span>
+              <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"  aria-hidden="true"    aria-label="NordVPN">
+                <path d="M9 6L15 12L9 18" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </span>
+          </a>
+          </div>
+        </section>
       </main>
     </div>
   </body>

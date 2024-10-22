@@ -7,11 +7,14 @@
     display: flex;
     justify-content: space-between;
     background-color: $unactive-tab-clr;
-    &-item {
 
-      &.active {
+
+    &-item {
+      cursor: pointer;
+      &:has(a[aria-selected="true"]) {
         background-color: $white;
       }
+
 
       padding-block: .5rem;
       padding-inline: 2rem;

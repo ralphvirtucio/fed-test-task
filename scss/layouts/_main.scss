@@ -3,7 +3,20 @@
 
 .main {
   margin-block: 1.5rem;
-  background-color: $white;
-  padding-block: var(--space-s);
-  padding-inline: var(--space-m);
+ 
+
+
+  section {
+    background-color: $white;
+    padding-block: var(--space-s);
+    padding-inline: var(--space-m);
+  }
+
+  
+  @include respond-to("small") {
+
+    & section:not(:last-child) {
+      margin-block-end: 1.5rem;
+    }
+  }
 }
