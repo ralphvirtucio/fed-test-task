@@ -19,38 +19,216 @@
       rel="stylesheet"
       href="/css/style.css" />
 
-      <script src="index.js" defer></script>
+    <script
+      src="index.js"
+      defer></script>
     <title>Top 3 VPNs</title>
   </head>
 
   <body>
     <div class="wrapper">
+      <div class="overlay"></div>
+      <div
+        role="dialog"
+        aria-labelledby="dialogTitle"
+        aria-describedby="dialogContent"
+        class="dialog-offer"
+        >
+        <div class="dialog-wrapper">
+          <h2 id="dialogTitle">Limited Time Offer!</h2>
+          <button class="btn__close">
+            <svg width="800px" height="800px" viewBox="0 0 16 16" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" version="1.1" id="svg8"><metadata id="metadata5"><rdf:RDF><cc:Work><dc:format>image/svg+xml</dc:format><dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/><dc:title/><dc:date>2021</dc:date><dc:creator><cc:Agent><dc:title>Timothée Giet</dc:title></cc:Agent></dc:creator><cc:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/"/></cc:Work><cc:License rdf:about="http://creativecommons.org/licenses/by-sa/4.0/"><cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/><cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/><cc:requires rdf:resource="http://creativecommons.org/ns#Notice"/><cc:requires rdf:resource="http://creativecommons.org/ns#Attribution"/><cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/><cc:requires rdf:resource="http://creativecommons.org/ns#ShareAlike"/></cc:License></rdf:RDF></metadata><rect transform="rotate(45)" ry="0" y="-1" x="4.3137083" height="2" width="14" id="rect1006" style="opacity:1;vector-effect:none;fill:#fff;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:3.20000005;stroke-opacity:1"/><rect transform="rotate(-45)" ry="0" y="10.313708" x="-7" height="2" width="14" id="rect1006-5" style="opacity:1;vector-effect:none;fill:#fff;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:3.20000005;stroke-opacity:1"/></svg>
+
+          </button>
+          <div id="dialogContent">
+            <p class="dialog-desc">Save 82% On Private Internet Access. Offer Expires In:</p>
+
+            <div
+              id="timer"
+              role="timer"
+              aria-live="off">
+              <div class="time">
+                <p class="time__label">Hours</p>
+                <div
+                  id="hours"
+                  class="time__container">
+                  <span>2</span>
+                  <span>4</span>
+                </div>
+              </div>
+              <div class="colon">:</div>
+              <div class="time">
+                <p class="time__label">Minutes</p>
+                <div
+                  id="minutes"
+                  class="time__container">
+                  <span>0</span>
+                  <span>0</span>
+                </div>
+              </div>
+
+              <div class="colon">:</div>
+
+              <div class="time">
+                <p class="time__label">Seconds</p>
+                <div
+                  id="seconds"
+                  class="time__container">
+                  <span>0</span>
+                  <span>0</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="rating">
+              <ul class="rating__list">
+                <li>
+                  <span id="rating-star">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      version="1.0"
+                      id="Layer_1"
+                      width="800px"
+                      height="800px"
+                      viewBox="0 0 64 64"
+                      enable-background="new 0 0 64 64"
+                      xml:space="preserve"
+                      aria-hidden="true">
+                      <path
+                        fill="#FFF"
+                        d="M63.893,24.277c-0.238-0.711-0.854-1.229-1.595-1.343l-19.674-3.006L33.809,1.15  C33.479,0.448,32.773,0,31.998,0s-1.48,0.448-1.811,1.15l-8.815,18.778L1.698,22.935c-0.741,0.113-1.356,0.632-1.595,1.343  c-0.238,0.71-0.059,1.494,0.465,2.031l14.294,14.657L11.484,61.67c-0.124,0.756,0.195,1.517,0.822,1.957  c0.344,0.243,0.747,0.366,1.151,0.366c0.332,0,0.666-0.084,0.968-0.25l17.572-9.719l17.572,9.719c0.302,0.166,0.636,0.25,0.968,0.25  c0.404,0,0.808-0.123,1.151-0.366c0.627-0.44,0.946-1.201,0.822-1.957l-3.378-20.704l14.294-14.657  C63.951,25.771,64.131,24.987,63.893,24.277z" />
+                    </svg>
+                  </span>
+                </li>
+                <li>
+                  <span id="rating-star">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      version="1.0"
+                      id="Layer_1"
+                      width="800px"
+                      height="800px"
+                      viewBox="0 0 64 64"
+                      enable-background="new 0 0 64 64"
+                      xml:space="preserve"
+                      aria-hidden="true">
+                      <path
+                        fill="#FFF"
+                        d="M63.893,24.277c-0.238-0.711-0.854-1.229-1.595-1.343l-19.674-3.006L33.809,1.15  C33.479,0.448,32.773,0,31.998,0s-1.48,0.448-1.811,1.15l-8.815,18.778L1.698,22.935c-0.741,0.113-1.356,0.632-1.595,1.343  c-0.238,0.71-0.059,1.494,0.465,2.031l14.294,14.657L11.484,61.67c-0.124,0.756,0.195,1.517,0.822,1.957  c0.344,0.243,0.747,0.366,1.151,0.366c0.332,0,0.666-0.084,0.968-0.25l17.572-9.719l17.572,9.719c0.302,0.166,0.636,0.25,0.968,0.25  c0.404,0,0.808-0.123,1.151-0.366c0.627-0.44,0.946-1.201,0.822-1.957l-3.378-20.704l14.294-14.657  C63.951,25.771,64.131,24.987,63.893,24.277z" />
+                    </svg>
+                  </span>
+                </li>
+                <li>
+                  <span id="rating-star">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      version="1.0"
+                      id="Layer_1"
+                      width="800px"
+                      height="800px"
+                      viewBox="0 0 64 64"
+                      enable-background="new 0 0 64 64"
+                      xml:space="preserve"
+                      aria-hidden="true">
+                      <path
+                        fill="#FFF"
+                        d="M63.893,24.277c-0.238-0.711-0.854-1.229-1.595-1.343l-19.674-3.006L33.809,1.15  C33.479,0.448,32.773,0,31.998,0s-1.48,0.448-1.811,1.15l-8.815,18.778L1.698,22.935c-0.741,0.113-1.356,0.632-1.595,1.343  c-0.238,0.71-0.059,1.494,0.465,2.031l14.294,14.657L11.484,61.67c-0.124,0.756,0.195,1.517,0.822,1.957  c0.344,0.243,0.747,0.366,1.151,0.366c0.332,0,0.666-0.084,0.968-0.25l17.572-9.719l17.572,9.719c0.302,0.166,0.636,0.25,0.968,0.25  c0.404,0,0.808-0.123,1.151-0.366c0.627-0.44,0.946-1.201,0.822-1.957l-3.378-20.704l14.294-14.657  C63.951,25.771,64.131,24.987,63.893,24.277z" />
+                    </svg>
+                  </span>
+                </li>
+                <li>
+                  <span id="rating-star">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      version="1.0"
+                      id="Layer_1"
+                      width="800px"
+                      height="800px"
+                      viewBox="0 0 64 64"
+                      enable-background="new 0 0 64 64"
+                      xml:space="preserve"
+                      aria-hidden="true">
+                      <path
+                        fill="#FFF"
+                        d="M63.893,24.277c-0.238-0.711-0.854-1.229-1.595-1.343l-19.674-3.006L33.809,1.15  C33.479,0.448,32.773,0,31.998,0s-1.48,0.448-1.811,1.15l-8.815,18.778L1.698,22.935c-0.741,0.113-1.356,0.632-1.595,1.343  c-0.238,0.71-0.059,1.494,0.465,2.031l14.294,14.657L11.484,61.67c-0.124,0.756,0.195,1.517,0.822,1.957  c0.344,0.243,0.747,0.366,1.151,0.366c0.332,0,0.666-0.084,0.968-0.25l17.572-9.719l17.572,9.719c0.302,0.166,0.636,0.25,0.968,0.25  c0.404,0,0.808-0.123,1.151-0.366c0.627-0.44,0.946-1.201,0.822-1.957l-3.378-20.704l14.294-14.657  C63.951,25.771,64.131,24.987,63.893,24.277z" />
+                    </svg>
+                  </span>
+                </li>
+                <li>
+                  <span id="rating-star">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      version="1.0"
+                      id="Layer_1"
+                      width="800px"
+                      height="800px"
+                      viewBox="0 0 64 64"
+                      enable-background="new 0 0 64 64"
+                      xml:space="preserve"
+                      aria-hidden="true">
+                      <path
+                        fill="#FFF"
+                        d="M63.893,24.277c-0.238-0.711-0.854-1.229-1.595-1.343l-19.674-3.006L33.809,1.15  C33.479,0.448,32.773,0,31.998,0s-1.48,0.448-1.811,1.15l-8.815,18.778L1.698,22.935c-0.741,0.113-1.356,0.632-1.595,1.343  c-0.238,0.71-0.059,1.494,0.465,2.031l14.294,14.657L11.484,61.67c-0.124,0.756,0.195,1.517,0.822,1.957  c0.344,0.243,0.747,0.366,1.151,0.366c0.332,0,0.666-0.084,0.968-0.25l17.572-9.719l17.572,9.719c0.302,0.166,0.636,0.25,0.968,0.25  c0.404,0,0.808-0.123,1.151-0.366c0.627-0.44,0.946-1.201,0.822-1.957l-3.378-20.704l14.294-14.657  C63.951,25.771,64.131,24.987,63.893,24.277z" />
+                    </svg>
+                  </span>
+                </li>
+              </ul>
+              <p class="rating__label"><strong>4.8</strong> out of 5</p>
+            </div>
+          </div>
+
+          <div class="banner">82% Discount on VPN</div>
+        </div>
+        <div></div>
+      </div>
+
       <header class="header">
         <h1 class="heading__main">Compare Our Top 3 VPNs</h1>
         <nav
           class="mobile-nav"
           id="mobile-nav">
-          <ul class="mobile-nav__list" role="tablist">
-            <li class="mobile-nav__list-item" role="presentation">
-              <a role="tab" href="#section1" aria-selected="true">
+          <ul
+            class="mobile-nav__list"
+            role="tablist">
+            <li
+              class="mobile-nav__list-item"
+              role="presentation">
+              <a
+                role="tab"
+                href="#section1"
+                aria-selected="true">
                 <img
-                src="./assets/expresvpn-only-logo.png"
-                alt="ExpressVPN Logo" />
+                  src="./assets/expresvpn-only-logo.png"
+                  alt="ExpressVPN Logo" />
               </a>
             </li>
-            <li class="mobile-nav__list-item" role="presentation">
-              <a role="tab" href="#section2" tabindex="-1">
-                
+            <li
+              class="mobile-nav__list-item"
+              role="presentation">
+              <a
+                role="tab"
+                href="#section2"
+                tabindex="-1">
                 <img
-                src="./assets/cyberghost-only-logo.png"
-                alt="CyberGhost Logo" />
+                  src="./assets/cyberghost-only-logo.png"
+                  alt="CyberGhost Logo" />
               </a>
             </li>
-            <li class="mobile-nav__list-item" role="presentation">
-              <a role="tab" href="#secton3" tabindex="-1">
+            <li
+              class="mobile-nav__list-item"
+              role="presentation">
+              <a
+                role="tab"
+                href="#secton3"
+                tabindex="-1">
                 <img
-                src="./assets/nordvpn-only-logo-icon.svg"
-                alt="NordVPN Logo" />
+                  src="./assets/nordvpn-only-logo-icon.svg"
+                  alt="NordVPN Logo" />
               </a>
             </li>
           </ul>
@@ -62,9 +240,24 @@
           id="section1"
           class="card top-1"
           role="tabpanel"
-          aria-labelledby="expressvpn"
-          
-          >
+          aria-labelledby="expressvpn">
+          <span class="top-1-vpn">
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.0"
+            id="Layer_1"
+            width="800px"
+            height="800px"
+            viewBox="0 0 64 64"
+            enable-background="new 0 0 64 64"
+            xml:space="preserve"
+            aria-hidden="true">
+            <path
+              fill="#FFF"
+              d="M63.893,24.277c-0.238-0.711-0.854-1.229-1.595-1.343l-19.674-3.006L33.809,1.15  C33.479,0.448,32.773,0,31.998,0s-1.48,0.448-1.811,1.15l-8.815,18.778L1.698,22.935c-0.741,0.113-1.356,0.632-1.595,1.343  c-0.238,0.71-0.059,1.494,0.465,2.031l14.294,14.657L11.484,61.67c-0.124,0.756,0.195,1.517,0.822,1.957  c0.344,0.243,0.747,0.366,1.151,0.366c0.332,0,0.666-0.084,0.968-0.25l17.572-9.719l17.572,9.719c0.302,0.166,0.636,0.25,0.968,0.25  c0.404,0,0.808-0.123,1.151-0.366c0.627-0.44,0.946-1.201,0.822-1.957l-3.378-20.704l14.294-14.657  C63.951,25.771,64.131,24.987,63.893,24.277z" />
+          </svg>
+          </span>
           <h2 class="card-title--mobile">ExpressVPN</h2>
           <div class="card__info">
             <img
@@ -72,9 +265,9 @@
               alt="ExpressVPN"
               class="logo" />
             <p class="content">
-              ExpressVPN, which is currently offering a <strong>30-day free trial</strong>, is the ultimate choice for high-speed
-              browsing. With its military-grade encryption, you can rest assured that your internet activity will always
-              remain private.
+              ExpressVPN, which is currently offering a <strong>30-day free trial</strong>, is the ultimate choice for
+              high-speed browsing. With its military-grade encryption, you can rest assured that your internet activity
+              will always remain private.
             </p>
             <p class="additional__info">Over 7000 people checked out expressvpn in the last month</p>
           </div>
@@ -210,17 +403,33 @@
 
             <div class="card__cta--desktop">
               <a
-              href="https://expressvpn.com"
-              class="btn__link btn__link--w-icon">
-              Visit website
-              <span>
-                <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"  aria-hidden="true"    aria-label="Express VPN">
-                  <path d="M9 6L15 12L9 18" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                href="https://expressvpn.com"
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="btn__link btn__link--w-icon">
+                Visit website
+                <span>
+                  <svg
+                    width="800px"
+                    height="800px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    aria-label="Express VPN">
+                    <path
+                      d="M9 6L15 12L9 18"
+                      stroke="#fff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
                   </svg>
-              </span>
-            </a>
+                </span>
+              </a>
               <a
-                href="expressvpn.com"
+                href="https://expressvpn.com"
+                target="_blank" 
+                rel="noopener noreferrer"
                 class="card__link"
                 >expressvpn.com</a
               >
@@ -317,30 +526,42 @@
           <div class="mobile__price-plan">
             <h4>Starting Price</h4>
             <p class="price">$6.67</p>
-            <p  class="price__per-month">per month</p>
+            <p class="price__per-month">per month</p>
           </div>
 
           <div class="mobile__cta">
             <a
-            href="https://expressvpn.com"
-            class="btn__link btn__link--w-icon">
-            Visit website
-            <span>
-              <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"  aria-hidden="true"    aria-label="Express VPN">
-                <path d="M9 6L15 12L9 18" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              href="https://expressvpn.com"
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="btn__link btn__link--w-icon">
+              Visit website
+              <span>
+                <svg
+                  width="800px"
+                  height="800px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  aria-label="Express VPN">
+                  <path
+                    d="M9 6L15 12L9 18"
+                    stroke="#fff"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
                 </svg>
-            </span>
-          </a>
+              </span>
+            </a>
           </div>
         </section>
-
 
         <section
           id="section2"
           class="card card--hidden"
           role="tabpanel"
-          aria-labelledby="cyberghost"
-          >
+          aria-labelledby="cyberghost">
           <h2 class="card-title--mobile">CyberGhost</h2>
 
           <div class="card__info">
@@ -349,12 +570,9 @@
               alt="CyberGhost"
               class="logo" />
             <p class="content">
-              Thanks to a brilliant interface and lots of
-              handy features, this VPN will make even the
-              pickiest users happy. For desktop or mobile,
-              Windows, Mac, or Linux, if you want to
-              securely enjoy private browsing, CyberGhost
-              is consistently impressive
+              Thanks to a brilliant interface and lots of handy features, this VPN will make even the pickiest users
+              happy. For desktop or mobile, Windows, Mac, or Linux, if you want to securely enjoy private browsing,
+              CyberGhost is consistently impressive
             </p>
           </div>
 
@@ -489,17 +707,33 @@
 
             <div class="card__cta--desktop">
               <a
-              href="https://cyberghost.com"
-              class="btn__link btn__link--w-icon">
-              Visit website
-              <span>
-                <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"  aria-hidden="true"    aria-label="CyberGhost">
-                  <path d="M9 6L15 12L9 18" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                href="https://cyberghost.com"
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="btn__link btn__link--w-icon">
+                Visit website
+                <span>
+                  <svg
+                    width="800px"
+                    height="800px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    aria-label="CyberGhost">
+                    <path
+                      d="M9 6L15 12L9 18"
+                      stroke="#fff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
                   </svg>
-              </span>
-            </a>
+                </span>
+              </a>
               <a
                 href="https://cyberghost.com"
+                target="_blank" 
+                rel="noopener noreferrer"
                 class="card__link"
                 >cyberghost.com</a
               >
@@ -596,20 +830,34 @@
           <div class="mobile__price-plan">
             <h4>Starting Price</h4>
             <p class="price">$6.67</p>
-            <p  class="price__per-month">per month</p>
+            <p class="price__per-month">per month</p>
           </div>
 
           <div class="mobile__cta">
             <a
-            href="https://cyberghost.com"
-            class="btn__link btn__link--w-icon">
-            Visit website
-            <span>
-              <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"  aria-hidden="true"    aria-label="CyberGhost">
-                <path d="M9 6L15 12L9 18" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              href="https://cyberghost.com"
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="btn__link btn__link--w-icon">
+              Visit website
+              <span>
+                <svg
+                  width="800px"
+                  height="800px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  aria-label="CyberGhost">
+                  <path
+                    d="M9 6L15 12L9 18"
+                    stroke="#fff"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
                 </svg>
-            </span>
-          </a>
+              </span>
+            </a>
           </div>
         </section>
 
@@ -617,8 +865,7 @@
           id="section3"
           class="card card--hidden"
           role="tabpanel"
-          aria-labelledby="nordvpn"
-          >
+          aria-labelledby="nordvpn">
           <h2 class="card-title--mobile">NordVPN</h2>
 
           <div class="card__info">
@@ -627,9 +874,7 @@
               alt="NordVPN"
               class="logo" />
             <p class="content">
-              NordVPN offers decent value for money.
-              Get a fast, secure, and affordable VPN with
-              good global coverage
+              NordVPN offers decent value for money. Get a fast, secure, and affordable VPN with good global coverage
             </p>
           </div>
 
@@ -764,18 +1009,34 @@
 
             <div class="card__cta--desktop">
               <a
-              href="https://nordvpn.com"
-              class="btn__link btn__link--w-icon">
-              Visit website
-              <span>
-                <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"  aria-hidden="true"    aria-label="NordVPN">
-                  <path d="M9 6L15 12L9 18" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                href="https://nordvpn.com"
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="btn__link btn__link--w-icon">
+                Visit website
+                <span>
+                  <svg
+                    width="800px"
+                    height="800px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    aria-label="NordVPN">
+                    <path
+                      d="M9 6L15 12L9 18"
+                      stroke="#fff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
                   </svg>
-              </span>
-            </a>
+                </span>
+              </a>
               <a
                 href="https://nordvpn.com"
                 class="card__link"
+                target="_blank" 
+                rel="noopener noreferrer"
                 >nordvpn.com</a
               >
             </div>
@@ -871,20 +1132,34 @@
           <div class="mobile__price-plan">
             <h4>Starting Price</h4>
             <p class="price">$6.67</p>
-            <p  class="price__per-month">per month</p>
+            <p class="price__per-month">per month</p>
           </div>
 
           <div class="mobile__cta">
             <a
-            href="https://nordvpn.com"
-            class="btn__link btn__link--w-icon">
-            Visit website
-            <span>
-              <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"  aria-hidden="true"    aria-label="NordVPN">
-                <path d="M9 6L15 12L9 18" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              href="https://nordvpn.com"
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="btn__link btn__link--w-icon">
+              Visit website
+              <span>
+                <svg
+                  width="800px"
+                  height="800px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  aria-label="NordVPN">
+                  <path
+                    d="M9 6L15 12L9 18"
+                    stroke="#fff"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
                 </svg>
-            </span>
-          </a>
+              </span>
+            </a>
           </div>
         </section>
       </main>

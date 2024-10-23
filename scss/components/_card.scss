@@ -15,6 +15,29 @@
   }
 }
 
+.top-1 {
+  position: relative;
+
+
+  &-vpn {
+    background-color: $primary-clr-1;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 0 0 100% 0;
+    top: 0;
+    left: 0;
+    svg {
+      width: 1.5rem;
+      height: 1.5rem;
+      transform: translateX(-5px) translateY(-5px);
+    }
+  }
+}
+
 .card.card--hidden {
   display: none;
 

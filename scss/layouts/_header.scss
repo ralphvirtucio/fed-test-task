@@ -1,6 +1,10 @@
-
+@use '../abstracts' as *;
 
 
 .header {
   text-align: center;
+
+  @include respond-to("medium") {
+    text-align: start;
+  }
 }
