@@ -18,9 +18,9 @@ closeBtn.addEventListener('click', () => {
 })
 
 
-const closeDialog = () => {
- overlay.classList.add("hidden")
- limitedOfferDialog.classList.add("hidden")
+const openDialog = () => {
+ overlay.classList.remove("hidden")
+ limitedOfferDialog.classList.remove("hidden")
 }
 
 const switchTab = (oldTab, newTab) => {
@@ -87,7 +87,7 @@ const updateTime = () => {
   if (totalSeconds > 0) {
     totalSeconds--;
   } else {
-    clearInterval(timerInterval); // Stop the timer when it reaches zero
+    clearInterval(timerInterval); 
     return
   }
 }
@@ -98,18 +98,18 @@ const updateDigits = (id, timeArray) => {
 
   digits.forEach((digit, index) => {
     if (digit.textContent !== timeArray[index]) {
-      container.classList.add('flipping'); // Add flip animation
+      container.classList.add('flipping');
 
       setTimeout(() => {
-        digit.textContent = timeArray[index]; // Update the digit after the animation
-        container.classList.remove('flipping'); // Remove flip animation
-      }, 500); // Duration of the flip animatio
+        digit.textContent = timeArray[index]; 
+        container.classList.remove('flipping'); 
+      }, 500);
     }
   });
 }
 
 // Set up the timer when the DOM is fully loaded
 window.addEventListener('DOMContentLoaded', () => {
-  // setTimeout(closeDialog, 5000); // Auto close dialog after 5 seconds
+  setTimeout(openDialog, 5000); // Auto open dialog after 5 seconds
   timerInterval = setInterval(updateTime, 1000); // Update the time every second
-});n
+});
